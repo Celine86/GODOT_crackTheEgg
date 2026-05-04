@@ -1,8 +1,6 @@
 [gd_scene format=3 uid="uid://bbwt1uxle2cjh"]
 
 [ext_resource type="Script" uid="uid://dw3vmxbs8cqld" path="res://control.gd" id="1_3253y"]
-[ext_resource type="Texture2D" uid="uid://k54ejb7weoo0" path="res://assets/icons/Add.png" id="2_u3cyc"]
-[ext_resource type="Texture2D" uid="uid://bf4juhcoak15k" path="res://assets/icons/AddClick.png" id="3_m7jmp"]
 [ext_resource type="Texture2D" uid="uid://bm7neo04rqwy6" path="res://assets/images/Egg001.png" id="4_u3cyc"]
 [ext_resource type="Texture2D" uid="uid://b1wuol4bgcjl1" path="res://assets/images/Egg002.png" id="5_i6j5g"]
 [ext_resource type="Texture2D" uid="uid://b0agrqte07kt4" path="res://assets/images/Egg003.png" id="6_g6g5t"]
@@ -22,6 +20,8 @@
 [ext_resource type="Texture2D" uid="uid://d2ofy6hk2uyhf" path="res://assets/images/Egg017.png" id="20_hyak3"]
 [ext_resource type="Texture2D" uid="uid://bfgfru6v47vpe" path="res://assets/images/Egg018.png" id="21_7842m"]
 [ext_resource type="Texture2D" uid="uid://cun4kuch3aa47" path="res://assets/images/Egg019.png" id="22_jrtx1"]
+[ext_resource type="Texture2D" uid="uid://baawrwrmlnmux" path="res://assets/icons/AddBig.png" id="23_g6g5t"]
+[ext_resource type="Texture2D" uid="uid://bs2dpvovnuk45" path="res://assets/icons/AddBigClick.png" id="23_i6j5g"]
 [ext_resource type="Texture2D" uid="uid://ydvbl1cxxc56" path="res://assets/images/Egg020.png" id="23_p7oqj"]
 [ext_resource type="Texture2D" uid="uid://2gx00a0u0s60" path="res://assets/images/Egg021.png" id="24_aobm4"]
 
@@ -109,8 +109,9 @@ func _on_click_button_pressed() -> void:
 [node name="Node2D" type="Node2D" unique_id=534722047]
 
 [node name="AnimatedEgg" type="AnimatedSprite2D" parent="." unique_id=1284360170]
+texture_filter = 1
 position = Vector2(480, 270)
-scale = Vector2(7.7968745, 7.9062495)
+scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_arlik")
 animation = &"eggCrack"
 frame_progress = 0.6377004
@@ -133,14 +134,14 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 440.0
-offset_top = 409.0
-offset_right = 456.0
-offset_bottom = 425.0
+offset_left = 448.0
+offset_top = 401.0
+offset_right = 512.0
+offset_bottom = 465.0
 grow_horizontal = 2
 grow_vertical = 0
-texture_normal = ExtResource("2_u3cyc")
-texture_pressed = ExtResource("3_m7jmp")
+texture_normal = ExtResource("23_g6g5t")
+texture_pressed = ExtResource("23_i6j5g")
 
 [node name="eggHatch" type="Label" parent="Control" unique_id=1578272637]
 layout_mode = 1
@@ -149,12 +150,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 459.0
-offset_top = 411.0
-offset_right = 532.0
-offset_bottom = 434.0
+offset_left = 442.0
+offset_top = 468.0
+offset_right = 527.0
+offset_bottom = 493.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_font_sizes/font_size = 24
 text = "eggHatch"
 
 [node name="GameTitle" type="Label" parent="." unique_id=185343026]

@@ -1,7 +1,7 @@
 extends Control
 
 func _ready():
-	RenderingServer.set_default_clear_color(Color.from_rgba8(0,0,0))
+	RenderingServer.set_default_clear_color(Color.from_rgba8(32,32,32))
 
 var hatchCount = 0
 #eggSprite est assignée quand le node est prêt, la variable référence le node AnimatedEgg situé dans le parent.
