@@ -110,7 +110,7 @@ func _on_click_button_pressed() -> void:
 
 [node name="AnimatedEgg" type="AnimatedSprite2D" parent="." unique_id=1284360170]
 texture_filter = 1
-position = Vector2(480, 270)
+position = Vector2(193, 318)
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_arlik")
 animation = &"eggCrack"
@@ -134,10 +134,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 448.0
-offset_top = 401.0
-offset_right = 512.0
-offset_bottom = 465.0
+offset_left = 358.0
+offset_top = 239.0
+offset_right = 422.0
+offset_bottom = 303.0
 grow_horizontal = 2
 grow_vertical = 0
 texture_normal = ExtResource("23_g6g5t")
@@ -150,20 +150,21 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 442.0
-offset_top = 468.0
-offset_right = 527.0
-offset_bottom = 493.0
+offset_left = 329.0
+offset_top = 209.0
+offset_right = 449.0
+offset_bottom = 234.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 24
 text = "eggHatch"
+horizontal_alignment = 1
 
 [node name="GameTitle" type="Label" parent="." unique_id=185343026]
-offset_left = 384.0
-offset_top = 64.0
-offset_right = 570.0
-offset_bottom = 127.0
+offset_left = 2.0
+offset_top = 59.0
+offset_right = 482.0
+offset_bottom = 119.0
 theme_override_font_sizes/font_size = 32
 text = "ECLOSION !"
 horizontal_alignment = 1
