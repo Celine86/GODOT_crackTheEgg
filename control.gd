@@ -31,8 +31,8 @@ func _on_click_button_pressed() -> void:
 		$clickButton.disabled = true
 		return
 	hatchCount += 5
+	playback.play_stream(preload('res://assets/sounds/eggCrack.mp3'), 0, 0, randf_range(2.5, 2.5))
 	#Si hatchCount est divisible par 10 sans reste alors on incrémente eggSprite.frame d'1i
 	if hatchCount % 10 == 0:
 		eggSprite.frame += 1
-		playback.play_stream(preload('res://assets/sounds/eggCrack.mp3'), 0, 0, randf_range(2.5, 2.5))
 		
