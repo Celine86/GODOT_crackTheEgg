@@ -91,7 +91,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("24_aobm4")
 }],
-"loop": true,
+"loop": false,
 "name": &"eggCrack",
 "speed": 5.0
 }]
@@ -114,7 +114,6 @@ position = Vector2(193, 318)
 scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_arlik")
 animation = &"eggCrack"
-frame_progress = 0.6377004
 speed_scale = 0.1
 script = SubResource("GDScript_i6j5g")
 
